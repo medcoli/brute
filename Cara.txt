@@ -1,0 +1,10 @@
+😠😠
+
+Install Tools BruteUpload-curl
+Buat Upload Banyak File Dalam 1 Web Target
+• apt-get update -y
+• apt-get upgrade -y
+• apt-get install curl git bash -y
+• git clone https://github.com/medcoli/brute
+• cd brute
+• bash m3d
